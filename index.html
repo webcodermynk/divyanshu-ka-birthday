@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#dff4ff" />
+  <title>Divyanshu Turns ONE! 🎂</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="at-gate">
+  <div class="sky-dots"></div>
+
+  <main id="app">
+    <section class="screen gate active">
+      <div class="gift bob">🎁</div>
+      <h2>Ek chhota sa surprise<br><em>Divyanshu</em> ke liye!</h2>
+      <p class="sub">Volume on karke kholo, ek cute birthday song bhi hai 🎶</p>
+      <button class="next-btn" id="openBtn">Surprise kholo 🎁</button>
+    </section>
+
+    <section class="screen hero">
+      <div class="cloud cloud-a"></div><div class="cloud cloud-b"></div>
+      <div class="balloon b1 bob">🎈</div><div class="balloon b2 bob">🎈</div>
+      <div class="stars">✦　✧　✦</div>
+
+      <p class="eyebrow">A LITTLE STAR IS TURNING</p>
+      <h1>ONE<span>!</span></h1>
+      <div class="name">Divyanshu</div>
+      <p class="date">06 • 10 • 2026</p>
+
+      <div class="hero-photo">
+        <img src="assets/divyanshu-1.jpg" alt="Divyanshu" />
+        <span class="photo-sparkle s1">✦</span>
+        <span class="photo-sparkle s2">✧</span>
+      </div>
+
+      <button class="next-btn" data-next>Let's Celebrate <span>→</span></button>
+      <div class="swipe-hint">tap to continue · ♥</div>
+    </section>
+
+    <section class="screen cake-screen">
+      <div class="section-top">🎈 <span>THE BIG DAY</span> 🎈</div>
+      <h2>Make a Wish, <em>Divyanshu!</em> ✨</h2>
+      <p class="sub">Candles bujhao aur dil se ek wish maango.</p>
+
+      <div class="cake-wrap" id="cake">
+        <div class="flame f1"></div><div class="flame f2"></div><div class="flame f3"></div>
+        <div class="candle c1"><span></span></div>
+        <div class="candle c2"><span></span></div>
+        <div class="candle c3"><span></span></div>
+        <div class="cake-top">ONE</div>
+        <img class="cake-photo" src="assets/divyanshu-1.jpg" alt="Divyanshu on the cake" />
+        <div class="cake-layer top-layer"></div>
+        <div class="cake-layer middle-layer"></div>
+        <div class="cake-layer bottom-layer"></div>
+        <div class="plate"></div>
+      </div>
+
+      <button class="wish-btn" id="wishBtn">🕯️ Blow the candles!</button>
+      <p class="wish-result" id="wishResult">Close your eyes... and make a little wish! 💫</p>
+      <button class="next-btn wishes-go" data-next>💌 Family ki wishes dekho</button>
+    </section>
+
+    <section class="screen wishes">
+      <h2>Sabki taraf se,<br><em>dher saara pyaar!</em> 💌</h2>
+      <div class="wish-stage" id="wishStage">
+        <article class="wcard on" style="--c:#ffe4a8"><div class="avatar">👴</div><h3>Dada ji</h3><p>Mere laadle pote, tujhe dekhte hi meri aankhon mein chamak aa jaati hai. Bhagwan tujhe lambi umar, achhi sehat aur dher saari khushiyan de. Jug jug jiyo, mere sher! 🙏</p></article>
+        <article class="wcard" style="--c:#f5c6d8"><div class="avatar">👵</div><h3>Dadi ji</h3><p>Mere chhote se raja beta, tu hamari zindagi ka sabse pyaara tohfa hai. Tujhe kisi ki nazar na lage. Dadi ki saari duayein hamesha tere saath hain. ❤️</p></article>
+        <article class="wcard" style="--c:#bfe8f7"><div class="avatar">🧑</div><h3>Chachu</h3><p>Oye mere chhote champ! Pehla saal mubarak ho! Jaldi se bade ho jao, phir hum saath mein khoob ghumne chalenge aur masti karenge. Chachu hamesha tere saath! 🎉</p></article>
+        <article class="wcard" style="--c:#d8f0d2"><div class="avatar">👩</div><h3>Chachi ji</h3><p>Mere pyaare Divyanshu, teri masoom si muskaan ne poore ghar mein khushiyan bhar di hain. Chachi ki taraf se dher saara pyaar aur aashirwad. Hamesha khush raho! 🌸</p></article>
+        <article class="wcard" style="--c:#e6d5f7"><div class="avatar">👧</div><h3>Badi Behen/Bhai</h3><p>Mere chhote bhai, tu hamare ghar ka sabse pyaara tohfa hai! Teri hansi se meri saari thakaan door ho jaati hai. Main hamesha tere saath khelungi. Happy 1st Birthday! 💙</p></article>
+      </div>
+      <div class="wdots" id="wdots"></div>
+      <p class="wcount" id="wcount"></p>
+      <button class="next-btn" id="wNext">Next wish →</button>
+    </section>
+
+    <section class="screen sky-screen">
+      <h2>Aasmaan se<br><em>ek surprise!</em> 🌈</h2>
+      <p class="sub" id="skyHint">Aasmaan par tap karo — sky show shuru hoga ✨</p>
+      <div class="sky-box" id="skyBox" role="button" tabindex="0" aria-label="Tap to start the sky show">
+        <div class="sun-ball"></div>
+        <div class="rainbow"></div>
+        <div class="scloud sc1"></div><div class="scloud sc2"></div><div class="scloud sc3"></div>
+        <div class="sballoon sb1">🎈</div><div class="sballoon sb2">🎈</div><div class="sballoon sb3">🎈</div>
+        <div class="hills"></div>
+        <div class="night"></div>
+        <canvas id="skyCv"></canvas>
+        <div class="sky-title" id="skyTitle">Happy Birthday<br><b>Divyanshu!</b></div>
+      </div>
+      <button class="ghost-btn" data-next>Next memory →</button>
+    </section>
+
+    <section class="screen memory photo-left">
+      <div class="memory-card">
+        <div class="photo-frame"><img src="assets/divyanshu-1.jpg" alt="Divyanshu sitting on the sofa" /></div>
+        <div class="memory-copy">
+          <span class="mini-label">MEMORY NO. 01</span>
+          <h2>Those little moments became our biggest happiness. ❤️</h2>
+          <p>Every smile, every tiny expression, every little moment — a whole year of memories we never want to forget.</p>
+        </div>
+      </div>
+      <button class="round-next" data-next>→</button>
+    </section>
+
+    <section class="screen story">
+      <div class="moon bob">☾</div>
+      <div class="stars big">✦　✧　✦　✧</div>
+      <span class="mini-label">365 DAYS OF LOVE</span>
+      <h2>One year of<br><em>little smiles.</em></h2>
+      <div class="story-line"></div>
+      <p>From your very first little moments to the giggles and smiles that brighten every room — you've made this year so special.</p>
+      <div class="tiny-clouds">☁︎　☁︎　☁︎</div>
+      <button class="next-btn" data-next>Another memory →</button>
+    </section>
+
+    <section class="screen memory photo-right">
+      <div class="memory-card">
+        <div class="memory-copy">
+          <span class="mini-label">MEMORY NO. 02</span>
+          <h2>That smile deserves its own little celebration. 🧸</h2>
+          <p>365 days down, and already a lifetime of love around you.</p>
+        </div>
+        <div class="photo-frame"><img src="assets/divyanshu-2.jpg" alt="Smiling Divyanshu" /></div>
+      </div>
+      <button class="round-next" data-next>→</button>
+    </section>
+
+    <section class="screen memory fun-memory">
+      <div class="fun-badge">A LITTLE ADVENTURE ✨</div>
+      <div class="fun-photo"><img src="assets/divyanshu-3.jpg" alt="Divyanshu on a fun outing" /></div>
+      <h2>Little explorer,<br><em>big personality.</em> 💙</h2>
+      <p>And the adventure is only just beginning...</p>
+      <button class="next-btn" data-next>One last wish →</button>
+    </section>
+
+    <section class="screen final-screen">
+      <div class="confetti-static">✦　🎈　✧　🎈　✦</div>
+      <div class="final-crown bob">👑</div>
+      <p class="eyebrow">THE SWEETEST LITTLE ONE</p>
+      <h1>Happy 1st<br><span>Birthday!</span></h1>
+      <div class="final-name">Divyanshu</div>
+
+      <div class="wish-card">
+        <p>You came into our lives and filled every day with little smiles, endless love and beautiful memories.</p>
+        <p>May you always stay happy, healthy and blessed. ✨</p>
+        <strong>With all our love,<br>Mumma &amp; Papa ❤️</strong>
+      </div>
+
+      <div class="final-cake bob">🎂</div>
+      <button class="restart" id="restart">↻ Relive the celebration</button>
+    </section>
+  </main>
+
+  <div class="progress" id="progress"></div>
+  <div class="floaties" id="floaties"></div>
+  <button class="music" id="musicBtn" aria-label="Music on/off">🎵</button>
+  <audio id="song" src="assets/birthday-song.mp3" loop preload="none"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
